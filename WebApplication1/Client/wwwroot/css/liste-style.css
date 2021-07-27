@@ -1,0 +1,41 @@
+﻿
+
+.tabel-aplicatie {
+    border: 1px solid black;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+
+.button {
+    width: 135px;
+    height: 57px;
+    /* Main color */
+    background-color: #E42313;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    /* White */
+
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

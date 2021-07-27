@@ -1,0 +1,94 @@
+﻿@page "/bank/{BankAccountID:int}"
+
+BankAccountID: @BankAccountID
+
+<head>
+    <link href="css/bankaccount.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Bank Account</title>
+</head>
+
+
+<form>
+    <div id="person-contract-main">
+        <div id="person-contract-second">
+            <div id="bank-container">
+
+                <div id="country-container">
+                    <div id="1st-row">
+                        <label id="label-text">Country</label>
+                        <input value=@item.Iban list="countries" type="text" id="countries-txtbox">
+
+                        <datalist id="countries">
+                            <option class=".fa fa-user icon" value="Austria"> </option>
+                            <option value="China"> </option>
+                            <option value="Germany"></option>
+                        </datalist>
+                    </div>
+                    <div id="2st-row">
+                        <label id="label-text">Bank code</label>
+                        <input value="3504" id="countries-txtbox">
+                    </div>
+                    <div id="3rd-row">
+                        <label id="label-text">Account</label>
+                        <input value="14399" id="countries-txtbox">
+                    </div>
+                </div>
+
+                <div id="bank-name">
+                    <div id="5th-row">
+                        <label id="label-text">Bank name</label>
+                        <input value="RaiffeisenBank Hohe Tauren eGen" class="bank-iban">
+                    </div>
+                    <div id="4th-row">
+                        <label id="label-text">IBAN</label>
+                        <input value="AT03 1234 1234 1234 1234 " class="bank-iban">
+                    </div>
+                </div>
+
+                <div id="swift-name">
+                    <div id="6th-row">
+                        <label id="label-text">SWIFT</label>
+                        <input value="RVSATRWT455" class="bank-iban">
+                    </div>
+                    <div id="7th-row">
+                        <label id="label-text">Holder</label>
+                        <input value="" class="bank-iban">
+                    </div>
+                </div>
+
+                <div id="comment-name">
+                    <label id="label-text">Comment</label>
+                    <input id="comment" value="No comments">
+                </div>
+
+                <div id="radio-buttons">
+                    <div class="btn-look">
+                        <input type="radio" value="Account/BLZ" class="buttons" id="1">
+                        <label class="buttons-text"> Account/BLZ</label>
+                    </div>
+                    <div class="btn-look">
+                        <input type="radio" value="IBAN/SWIFT" class="buttons" id="2" checked>
+                        <label class="buttons-text">IBAN/SWIFT</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+@code{
+    [Parameter]
+    public int BankAccountID { get; set; }
+
+    public BankAccount item { get; set; } = new BankAccount { Id = 1, Iban = "Austria" };
+
+
+
+
+
+
+
+}

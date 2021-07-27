@@ -1,0 +1,47 @@
+﻿@page "/counter"
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<h2> Testam putin sa vedem ce si cum </h2>
+
+<button class="btn btn-primary" @onclick="FunctiaNoua"> Da-i click si schimbam culoarea</button>
+<button class="btn btn-primary" @onclick="SchimbaNumele"> Da-i click si schimbam si numele</button>
+
+
+<p style = "color: @culoareNoua1 ; font-size: 25px "> <b> @numeNou1 </b></p>
+
+@code {
+    Random rnd = new Random();
+
+    private int currentCount = 0;
+    private int ceCuloare;
+    private string[] culoareNoua = { "red", "blue", "green", "yellow", "pink", "purple" };
+    private string culoareNoua1;
+    private string[] numeNou = { "Vlad", "Andrei", "Ionut", "Cristi", "George" };
+    private string numeNou1 = "Vlad";
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+
+    private void FunctiaNoua()
+    {
+        ceCuloare = rnd.Next(5);
+        culoareNoua1 = culoareNoua[ceCuloare];
+
+    }
+
+
+    private void SchimbaNumele()
+        {
+            ceCuloare = rnd.Next(5);
+            numeNou1 = numeNou[ceCuloare];
+        }
+
+}
