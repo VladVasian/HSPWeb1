@@ -1,4 +1,9 @@
-﻿#countries-txtbox {
+﻿
+
+
+
+
+#countries-txtbox {
     /* Field */
     /* Auto Layout */
 
@@ -129,7 +134,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-wrap: nowrap;
     padding: 20px;
+    flex-basis: 33%;
     position: absolute;
     width: 100%;
     height: 698px;
@@ -226,8 +233,6 @@
 }
 
 #4th-row {
- 
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
