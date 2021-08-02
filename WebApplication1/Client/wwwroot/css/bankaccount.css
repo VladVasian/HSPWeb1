@@ -17,10 +17,8 @@
 }
 
 #person-contract-second {
-
     width: 100%;
-    /* White */
-    background: #FFFFFF;
+ 
 }
 
 #bank-container {
@@ -50,11 +48,11 @@
     align-items: flex-start;
     padding: 0px;
     position: static;
-    width: 59.7%;
+    width: 60%;
     height: 59px;
     left: 0px;
     top: 30px;
-    justify-content: space-around;
+    justify-content: space-between;
     /* Inside Auto Layout */
 
     flex: none;
@@ -123,65 +121,17 @@
 }
 
 
-#1st-row {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: static;
+#first-row {
     width: 100%;
-    height: 59px;
-    left: 0px;
-    top: 0px;
     margin-right:25px;
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-    margin: 0px 20px;
+}
+#second-row {
+    width: 100%;
+    margin-right:25px;
 }
 
-#2st-row {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: static;
+#third-row {  
     width: 100%;
-    height: 59px;
-    left: 352.67px;
-    top: 0px;
-    margin-right:25px;
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 1;
-    margin: 0px 20px;
-}
-
-#3rd-row {
-    /* Field */
-    /* Auto Layout */
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 0px;
-    position: static;
-    width: 100%;
-    height: 59px;
-    left: 705.33px;
-    top: 0px;
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 2;
-    flex-grow: 1;
-    margin: 0px 20px;
 }
 
 #bank-name {
@@ -192,6 +142,7 @@
     padding: 0px;
     position: static;
     width: 60%;
+    min-width:890px;
     height: 59px;
     left: 0px;
     top: 104px;
@@ -205,50 +156,17 @@
     margin: 15px 0px;
 }
 
-#4th-row {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: static;
+#forth-row {
+   
     width: 100%;
-    height: 59px;
-    left: 0px;
-    top: 0px;
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-    margin: 0px 20px;
+  
 }
 
-#5th-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 20px;
-    position: static;
+#fifth-row {
+   
     width: 100%;
-    height: 40px;
-    left: 0px;
-    top: 19px;
     margin-right:25px;
-    /* White */
 
-    background: #FFFFFF;
-    /* Outline */
-
-    border: 1px solid #E3EBF2;
-    box-sizing: border-box;
-    border-radius: 5px;
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 4px 0px;
 }
 
 .bank-iban {
@@ -289,6 +207,7 @@
     padding: 0px;
     position: static;
     width: 60%;
+    min-width: 890px;
     height: 59px;
     left: 0px;
     top: 178px;
@@ -301,45 +220,15 @@
     margin: 15px 0px;
 }
 
-#6th-row {
-    /* Auto Layout */
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: static;
+#sixth-row {
+  
     width: 100%;
-    height: 59px;
-    left: 0px;
-    top: 0px;
-    margin-right: 25px;
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-    margin: 0px 20px;
+    margin-right:25px;
+  
 }
 
-#7th-row {
-    /* Auto Layout */
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: static;
+#seventh-row {
     width: 100%;
-    height: 59px;
-    left: 529px;
-    top: 0px;
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 1;
-    margin: 0px 20px;
 }
 
 #comment-name {
@@ -351,6 +240,7 @@
     padding: 0px;
     position: static;
     width: 60%;
+    min-width: 890px;
     height: 59px;
     left: 0px;
     top: 252px;
@@ -372,7 +262,7 @@
     align-items: center;
     padding: 10px 20px;
     position: static;
-    width: 1038px;
+    width: 100%;
     height: 40px;
     left: 0px;
     top: 19px;
@@ -422,7 +312,7 @@
     /* White */
     background: #FFFFFF;
     /* Outline */
-
+    
     border: 1px solid #E3EBF2;
     box-sizing: border-box;
     border-radius: 30px;
@@ -459,7 +349,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 10px;
+    margin: 0px 0px;
 }
 
 .btn-look {
@@ -493,4 +383,113 @@
     #bank-container {
         width: 70%;
     }
+}
+
+.iconA{
+    background: white url(../Icons/austria.png) left no-repeat;
+    padding-left: 17px;
+}
+
+
+#contract-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 15%;
+    min-width: 148px;
+    background: #F3F5F9;
+    padding: 20px 0px 20px 20px;
+    border-bottom-left-radius:15px;
+    border-top-left-radius:15px;
+}
+
+form {
+    margin: 25px;
+    width: 100%;
+}
+
+#bank-form{
+    min-width:0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#contract-details-user{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    max-height: 162px;
+    left: 20px;
+    top: 20px;
+}
+
+#name {
+    position: static;
+    width: 116px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    /* H1 */
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    /* Black */
+
+    color: #000000;
+}
+
+.starting-list {
+    position: static;
+    width: 49px;
+    height: 17px;
+    left: 0px;
+    top: 0px;
+ 
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    /* Light gray */
+
+    color: #738999;
+}
+
+p {
+    /* 200864323 */
+
+
+    position: static;
+    width: 100%;
+    height: 100%;
+    left: 54px;
+    top: 0px;
+    /* Body */
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    /* Black */
+
+    color: #000000;
 }

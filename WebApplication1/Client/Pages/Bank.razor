@@ -8,76 +8,95 @@ BankAccountID: @BankAccountID
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <title> Bank Account</title>
+
 </head>
 
 
-<form>
+
     <div id="person-contract-main">
         <div id="person-contract-second">
-            <div id="bank-container">
 
-                <div id="country-container">
-                    <div id="1st-row">
-                        <label id="label-text">Country</label>
-                        <input value=@item.Iban list="countries" type="text" id="countries-txtbox">
+            <!-- CHENAR DREAPTA COMENTAT MOMENTAN
+    <div id="contract-details">
+        <div id="contract-details-user">
+            <h1 id="name"> Raml, Dieter</h1>
+            <p> <span class="starting-list">MG-Nr: </span> 2008242321</p>
+            <p> <span class="starting-list">Year contribution:  </span> 3.000 EUR</p>
+            <p> <span class="starting-list">Status: </span> MEM</p>
+            <p> <span class="starting-list">Payer status: </span> Spender</p>
+            <p> Active</p>
+        </div>
+    </div>
+    -->
+            <div id="bank-form">
+                <form>
+                    <div id="bank-container">
 
-                        <datalist id="countries">
-                            <option class=".fa fa-user icon" value="Austria"> </option>
-                            <option value="China"> </option>
-                            <option value="Germany"></option>
-                        </datalist>
-                    </div>
-                    <div id="2st-row">
-                        <label id="label-text">Bank code</label>
-                        <input value="3504" id="countries-txtbox">
-                    </div>
-                    <div id="3rd-row">
-                        <label id="label-text">Account</label>
-                        <input value="14399" id="countries-txtbox">
-                    </div>
-                </div>
+                        <div id="country-container">
+                            <div id="first-row">
+                                <label id="label-text">Country</label>
 
-                <div id="bank-name">
-                    <div id="5th-row">
-                        <label id="label-text">Bank name</label>
-                        <input value="RaiffeisenBank Hohe Tauren eGen" class="bank-iban">
-                    </div>
-                    <div id="4th-row">
-                        <label id="label-text">IBAN</label>
-                        <input value="AT03 1234 1234 1234 1234 " class="bank-iban">
-                    </div>
-                </div>
+                                <input value=@item.Iban list="countries" type="text" id="countries-txtbox" class="iconA">
 
-                <div id="swift-name">
-                    <div id="6th-row">
-                        <label id="label-text">SWIFT</label>
-                        <input value="RVSATRWT455" class="bank-iban">
-                    </div>
-                    <div id="7th-row">
-                        <label id="label-text">Holder</label>
-                        <input value="" class="bank-iban">
-                    </div>
-                </div>
+                                <datalist id="countries">
+                                    <option value="Austria"> </option>
+                                    <option value="China"> </option>
+                                    <option value="Germany"></option>
+                                </datalist>
+                            </div>
+                            <div id="second-row">
+                                <label id="label-text">Bank code</label>
+                                <input value="3504" id="countries-txtbox">
+                            </div>
+                            <div id="third-row">
+                                <label id="label-text">Account</label>
+                                <input value="14399" id="countries-txtbox">
+                            </div>
+                        </div>
 
-                <div id="comment-name">
-                    <label id="label-text">Comment</label>
-                    <input id="comment" value="No comments">
-                </div>
+                        <div id="bank-name">
+                            <div id="fifth-row">
+                                <label id="label-text">Bank name</label>
+                                <input value="RaiffeisenBank Hohe Tauren eGen" class="bank-iban">
+                            </div>
+                            <div id="forth-row">
+                                <label id="label-text">IBAN</label>
+                                <input pattern="^DE\d{2}[ ]\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{2}|DE\d{20}$" value="AT03 1234 1234 1234 1234 " class="bank-iban" type="text" placeholder="IBAN">
+                            </div>
+                        </div>
 
-                <div id="radio-buttons">
-                    <div class="btn-look">
-                        <input type="radio" value="Account/BLZ" class="buttons" id="1">
-                        <label class="buttons-text"> Account/BLZ</label>
+                        <div id="swift-name">
+                            <div id="sixth-row">
+                                <label id="label-text">SWIFT</label>
+                                <input value="RVSATRWT455" class="bank-iban">
+                            </div>
+                            <div id="seventh-row">
+                                <label id="label-text">Holder</label>
+                                <input value="" class="bank-iban">
+                            </div>
+                        </div>
+
+                        <div id="comment-name">
+                            <label id="label-text">Comment</label>
+                            <input id="comment" value="No comments">
+                        </div>
+
+                        <div id="radio-buttons">
+                            <label class="btn-look">
+                                <input type="radio" value="Account/BLZ" class="buttons" id="1" name="account">
+                                <label class="buttons-text" for="1"> Account/BLZ</label>
+                            </label>
+                            <label class="btn-look">
+                                <input type="radio" value="IBAN/SWIFT" class="buttons" id="2" name="account" checked>
+                                <label class="buttons-text" for="2">IBAN/SWIFT</label>
+                            </label>
+                        </div>
                     </div>
-                    <div class="btn-look">
-                        <input type="radio" value="IBAN/SWIFT" class="buttons" id="2" checked>
-                        <label class="buttons-text">IBAN/SWIFT</label>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
-</form>
+
 
 
 
