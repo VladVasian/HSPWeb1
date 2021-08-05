@@ -1,5 +1,4 @@
 ﻿@page "/bank"
-
 BankAccountID: @BankAccountID
 
 <head>
@@ -13,89 +12,89 @@ BankAccountID: @BankAccountID
 
 
 
-    <div id="person-contract-main">
-        <div id="person-contract-second">
+<div id="person-contract-main">
+    <div id="person-contract-second">
 
-            <!-- CHENAR DREAPTA COMENTAT MOMENTAN
-    <div id="contract-details">
-        <div id="contract-details-user">
-            <h1 id="name"> Raml, Dieter</h1>
-            <p> <span class="starting-list">MG-Nr: </span> 2008242321</p>
-            <p> <span class="starting-list">Year contribution:  </span> 3.000 EUR</p>
-            <p> <span class="starting-list">Status: </span> MEM</p>
-            <p> <span class="starting-list">Payer status: </span> Spender</p>
-            <p> Active</p>
-        </div>
-    </div>
-    -->
-            <div id="bank-form">
-                <form>
-                    <div id="bank-container">
-
-                        <div id="country-container">
-                            <div id="first-row">
-                                <label id="label-text">Country</label>
-
-                                <input value=@item.Iban list="countries" type="text" id="countries-txtbox" class="iconA">
-
-                                <datalist id="countries">
-                                    <option value="Austria"> </option>
-                                    <option value="China"> </option>
-                                    <option value="Germany"></option>
-                                </datalist>
-                            </div>
-                            <div id="second-row">
-                                <label id="label-text">Bank code</label>
-                                <input value="3504" id="countries-txtbox">
-                            </div>
-                            <div id="third-row">
-                                <label id="label-text">Account</label>
-                                <input value="14399" id="countries-txtbox">
-                            </div>
-                        </div>
-
-                        <div id="bank-name">
-                            <div id="fifth-row">
-                                <label id="label-text">Bank name</label>
-                                <input value="RaiffeisenBank Hohe Tauren eGen" class="bank-iban">
-                            </div>
-                            <div id="forth-row">
-                                <label id="label-text">IBAN</label>
-                                <input pattern="^DE\d{2}[ ]\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{2}|DE\d{20}$" value="AT03 1234 1234 1234 1234 " class="bank-iban" type="text" placeholder="IBAN">
-                            </div>
-                        </div>
-
-                        <div id="swift-name">
-                            <div id="sixth-row">
-                                <label id="label-text">SWIFT</label>
-                                <input value="RVSATRWT455" class="bank-iban">
-                            </div>
-                            <div id="seventh-row">
-                                <label id="label-text">Holder</label>
-                                <input value="" class="bank-iban">
-                            </div>
-                        </div>
-
-                        <div id="comment-name">
-                            <label id="label-text">Comment</label>
-                            <input id="comment" value="No comments">
-                        </div>
-
-                        <div id="radio-buttons">
-                            <label class="btn-look">
-                                <input type="radio" value="Account/BLZ" class="buttons" id="1" name="account">
-                                <label class="buttons-text" for="1"> Account/BLZ</label>
-                            </label>
-                            <label class="btn-look">
-                                <input type="radio" value="IBAN/SWIFT" class="buttons" id="2" name="account" checked>
-                                <label class="buttons-text" for="2">IBAN/SWIFT</label>
-                            </label>
-                        </div>
-                    </div>
-                </form>
+        <!-- CHENAR DREAPTA COMENTAT MOMENTAN
+        <div id="contract-details">
+            <div id="contract-details-user">
+                <h1 id="name"> Raml, Dieter</h1>
+                <p> <span class="starting-list">MG-Nr: </span> 2008242321</p>
+                <p> <span class="starting-list">Year contribution:  </span> 3.000 EUR</p>
+                <p> <span class="starting-list">Status: </span> MEM</p>
+                <p> <span class="starting-list">Payer status: </span> Spender</p>
+                <p> Active</p>
             </div>
         </div>
+        -->
+        <div id="bank-form">
+            <form>
+                <div id="bank-container">
+
+                    <div id="country-container">
+                        <div id="first-row">
+                            <label id="label-text">Country</label>
+
+                            <input value=@item.Iban list="countries" type="text" id="countries-txtbox" class="iconA">
+
+                            <datalist id="countries">
+                                <option value="Austria"> </option>
+                                <option value="China"> </option>
+                                <option value="Germany"></option>
+                            </datalist>
+                        </div>
+                        <div id="second-row">
+                            <label id="label-text">Bank code</label>
+                            <input value="3504" id="countries-txtbox">
+                        </div>
+                        <div id="third-row">
+                            <label id="label-text">Account</label>
+                            <input value="14399" id="countries-txtbox">
+                        </div>
+                    </div>
+
+                    <div id="bank-name">
+                        <div id="fifth-row">
+                            <label id="label-text">Bank name</label>
+                            <input value="RaiffeisenBank Hohe Tauren eGen" class="bank-iban">
+                        </div>
+                        <div id="forth-row">
+                            <label id="label-text">IBAN</label>
+                            <input pattern="^DE\d{2}[ ]\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{2}|DE\d{20}$" value="AT03 1234 1234 1234 1234 " class="bank-iban" type="text" placeholder="IBAN">
+                        </div>
+                    </div>
+
+                    <div id="swift-name">
+                        <div id="sixth-row">
+                            <label id="label-text">SWIFT</label>
+                            <input value="RVSATRWT455" class="bank-iban">
+                        </div>
+                        <div id="seventh-row">
+                            <label id="label-text">Holder</label>
+                            <input value="" class="bank-iban">
+                        </div>
+                    </div>
+
+                    <div id="comment-name">
+                        <label id="label-text">Comment</label>
+                        <input id="comment" value="No comments">
+                    </div>
+
+                    <div id="radio-buttons">
+                        <label class="btn-look">
+                            <input type="radio" value="Account/BLZ" class="buttons" id="1" name="account">
+                            <label class="buttons-text" for="1"> Account/BLZ</label>
+                        </label>
+                        <label class="btn-look">
+                            <input type="radio" value="IBAN/SWIFT" class="buttons" id="2" name="account" checked>
+                            <label class="buttons-text" for="2">IBAN/SWIFT</label>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+</div>
 
 
 
